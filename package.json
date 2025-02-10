@@ -1,0 +1,42 @@
+{
+  "name": "orimay-config-eslint-nuxt",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./eslint.config.mts",
+      "require": "./eslint.config.mts"
+    }
+  },
+  "main": "eslint.config.mts",
+  "files": [
+    "eslint.config.mts"
+  ],
+  "scripts": {
+    "release": "changelogen --release --push && pnpm publish",
+    "lint": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@types/node": "^22.10.1",
+    "camelcase": "^8.0.0",
+    "changelogen": "^0.5.7",
+    "eslint": "^9.16.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.4.1",
+    "lint-staged": "^15.2.10",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0"
+  },
+  "dependencies": {
+    "orimay-config-eslint": "file:../config-eslint"
+  },
+  "peerDependencies": {
+    "eslint": "^9.16.0"
+  },
+  "lint-staged": {
+    "*.mts": "pnpm run lint"
+  }
+}
