@@ -1,6 +1,6 @@
 {
   "name": "orimay-config-eslint-nuxt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "exports": {
     ".": {
@@ -31,7 +31,8 @@
     "typescript-eslint": "^8.16.0"
   },
   "dependencies": {
-    "orimay-config-eslint": "file:../config-eslint"
+    "eslint-flat-config-utils": "^2.0.1",
+    "orimay-config-eslint": "latest"
   },
   "peerDependencies": {
     "eslint": "^9.16.0"
