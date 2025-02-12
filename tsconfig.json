@@ -17,7 +17,6 @@
     "composite": true,
     "verbatimModuleSyntax": true
   },
-  "references": [{ "path": "../config-eslint" }],
   "include": ["**/*"],
   "exclude": ["**/*.test.ts", "test/**", "node_modules"]
 }

@@ -1,4 +1,4 @@
-# orimay-config-eslint-vue-nuxt
+# orimay-config-eslint-nuxt
 
 A complete ESLint configuration for Vue projects with seamless Nuxt integration.
 This package builds on the robust
@@ -30,13 +30,13 @@ Nuxt's ESLint config composer.
 Install the package and its required peer dependencies:
 
 ```bash
-npm install --save-dev orimay-config-eslint-vue-nuxt eslint orimay-config-eslint typescript-eslint
+npm install --save-dev eslint orimay-config-eslint-nuxt
 ```
 
 Or with pnpm:
 
 ```bash
-pnpm add -D orimay-config-eslint-vue-nuxt eslint orimay-config-eslint typescript-eslint
+pnpm add -D eslint orimay-config-eslint-nuxt
 ```
 
 **Note**: Ensure you have ESLint version `^9.15.0` installed as it is required
