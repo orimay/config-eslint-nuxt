@@ -15,7 +15,7 @@
   "scripts": {
     "release": "changelogen --release --push && pnpm publish",
     "lint": "eslint . --fix",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
@@ -31,7 +31,8 @@
     "typescript-eslint": "^8.16.0"
   },
   "dependencies": {
-    "orimay-config-eslint": "file:../config-eslint"
+    "eslint-flat-config-utils": "^2.0.1",
+    "orimay-config-eslint": "latest"
   },
   "peerDependencies": {
     "eslint": "^9.16.0"
