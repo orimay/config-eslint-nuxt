@@ -2,20 +2,30 @@
   "name": "orimay-config-eslint-nuxt",
   "version": "1.0.2",
   "type": "module",
+  "main": "./dist/eslint.config.mjs",
+  "types": "./dist/eslint.config.d.mts",
   "exports": {
     ".": {
-      "import": "./eslint.config.mts",
-      "require": "./eslint.config.mts"
+      "import": "./dist/eslint.config.mjs",
+      "require": "./dist/eslint.config.mjs"
     }
   },
-  "main": "eslint.config.mts",
   "files": [
-    "eslint.config.mts"
+    "dist"
+  ],
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "nuxt",
+    "typescript",
+    "lint",
+    "flat-config"
   ],
   "scripts": {
     "release": "changelogen --release --push && pnpm publish",
     "lint": "eslint . --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build": "tsc"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
@@ -25,7 +35,7 @@
     "changelogen": "^0.5.7",
     "eslint": "^9.16.0",
     "husky": "^9.1.7",
-    "jiti": "^2.4.1",
+    "jiti": "^2.4.2",
     "lint-staged": "^15.2.10",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.16.0"

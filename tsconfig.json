@@ -5,6 +5,8 @@
     "rootDir": ".",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+    "declaration": true,
+    "outDir": "./dist",
     "resolveJsonModule": true,
     "strict": true,
     "noImplicitReturns": true,
@@ -18,5 +20,5 @@
     "verbatimModuleSyntax": true
   },
   "include": ["**/*"],
-  "exclude": ["**/*.test.ts", "test/**", "node_modules"]
+  "exclude": ["dist/**", "**/*.test.ts", "test/**", "node_modules"]
 }
