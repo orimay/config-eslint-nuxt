@@ -1,6 +1,6 @@
 {
   "name": "orimay-config-eslint-nuxt",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "main": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
@@ -25,7 +25,7 @@
   "scripts": {
     "release": "changelogen --release --push && bun publish",
     "lint": "eslint . --fix",
-    "prepare": "husky",
+    "prepare": "bun husky install",
     "build": "tsc"
   },
   "devDependencies": {
